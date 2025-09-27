@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-compatible"content="IE-edge">
+      <meta name="viewport" content="width-device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="projet.css">
+       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
+      <title>Mon resto</title>
+   </head>
+   <body>
+      <div class="container">
+         <header class="titre">
+            <div>
+               <img src="image/logo.png" alt="Mon resto">
+            </div>
+            <div>
+               <h3><i class="fa-solid fa-phone"></i>&nbsp;Appelez-nous:687.40.98.56</h3>
+            </div>
+         </header>
+         <section class="carrousel">
+            <div class="images">
+               <img  class="slider-item" src="image/image_1.jpg "/>
+               <img  class="slider-item" src="image/image_2.jpg "/>
+               <img  class="slider-item" src="image/image_3.jpg "/>
+            </div>
+            <div class="fleches">
+               <span ><i id="gauche" class="fa-solid fa-angle-left fa-2xl"></i></span>
+               <span ><i id="droite" class="fa-solid fa-angle-right fa-2xl"></i></span>
+            </div>
+         </section>
+         <nav>
+            <div id="toggle-btn">
+               <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+            <ul id="ulref">
+               <li>Realisation</li>
+               <li>Entrees</li>
+               <li>Plats</li>
+               <li>Desserts</li>
+               <li>Boissobs</li>
+               <li>Contact</li>
+            </ul>
+         </nav>
+         <section class="articles">
+            <article class="un">
+              <h5>Suggestions de la semaine:</h5><br>
+              <p><b>-ENTREES</b></p>
+              <p>Tartare de saschimi de ton rouge facon Thai,mangue,coriandre,sesame et salade de wakamé:16,80£</p>
+              <p>coeur de ris de veau roti ,poelee de legumes de saison,reduction aux éclats de morilles:18,50£</p><br>
+              <p><b>-PLATS</b></p>
+              <p>Entrecote de boeuf(Hereford),+/-300gr, frites,salade,sauce au choix:30,00£ </p>
+               <p>coquelet roti sur l'os,rosti de pomms de terre,haricots verts lardés,jus crémé à l'estragon:23,90£ </p><br>
+               <p><b>-DESSERT</b></p>
+               <p>crepes facon (suzette) a la mandarine,glace ala vanille de madagascar:9,00£ </p> 
+            </article>
+            <article class="deux">
+               <h4>Nous vous proposons un menu 3services qu choix</h4><br>
+               <p>celi-ci varie selon le marché et les saison ,il peut changer quotidienenement comme hebdomadairement</p>
+               <p>Dégustez des plats savoureux dans un cadre exceptionnel ! cuisine raffinée.service haut de gamme.</p>
+               <p>Tous les inrédients sont frais et soigneusement choisis par notre chef.</p>
+               <p>En espérant que vous prendrez du plaisir à manger chez nous.</p><br>
+               <p>Ne ratez pas l'occasion des meilleurs tables. </p>
+                <button class="button"><i class="fa-solid fa-file-alt fa-xl"></i>&nbsp;RESERVEZ VOTRE TABLE</button>
+            </article>
+         </section>
+         <section class="temoignages">
+            <h2>Ce que nos clients pensent de nous </h2>
+            <div class="temoignage_card">
+               <div class="card">
+                        <h5 class="name">Cindy M </h5>
+                        <p>Nous nous y sommes rendu un vendredi soir en amoureux .prix trés accessibles pour un restaurant gastronomique</p>
+               </div>
+               <div class="card">
+                  <h5 class="name">joelle D</h5>
+                  <p>trés bon,le menu était délicieu,les vin aussi</p>
+               </div>   
+               <div class="card">
+                  <h5 class="name">Fabrice C</h5>
+                  <p>le chef a encore ravi nos papilles ! Aue ça soit par le forfait vin ,avec un serveur trés concillant selon les gouts,que par le menu 3 services</p>
+               </div>   
+               <div class="card">
+                  <h5 class="name">Romuald H</h5>
+                  <p>trés bon service rapide et super bon.rien à redire  .</p>
+               </div>   
+               <div class="card">
+                  <h5 class="name">Patricia</h5>
+                  <p>Beau restaurant installé le lon de l'eau .personnel trés professionnel et surtout cuisine raffinée .</p>
+               </div>   
+               <div class="card">
+                  <h5 class="name">Serge G</h5>
+                  <p>Un petit hunch entre a,is avec un delicieux poisson en plat,un vin blanc conseillé pour le patron ,à refaire dés que possible.....</p>
+               </div>                    
+            </div>
+            <button>Plus de temoignages clients ici</button>
+         </section>
+         <footer>
+            <p>monrestaurant.be numéro entreprise:0123.567.790 tel:237/687409856</p>
+         </footer>
+      </div>
+     <script>
+            //Menu Hamburger
+          const btn=document.querySelector( '#toggle-btn');
+          const ul=document.getElementById('ulref');
+
+          btn.onclick=()=> ul.style.opacity==0 ? ul.style.opacity=1: ul.stlyle.opacity=0;
+
+           //Carrousel
+
+           const carrousel_content=document.querySelector('.images');
+           const prev=document.getElementById('gauche');
+           const next=document.getElementById('droite');
+           let translate=0;
+
+           prev.onclick=()=>{
+            translate +=100;
+            if(translate >0)
+                translate =0;
+            carrousel_content.style.transform ='translatex('+ translate +'%)';   
+           }
+           next.onclick=()=>{  
+            translate -=100;
+            if(translate < -200)
+                translate = -200;
+            carrousel_content.style.transform ='translatex('+ translate +'%)';   
+           }
+     </script> 
+   </body>
+</html>

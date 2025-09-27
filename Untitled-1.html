@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bienvenue dans ma page  web</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <h1>Bonjour, Bienvenue</h1>
+      <form method="post" action="traitement.php">
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+          <p>
+            <label for="nom">Quel est votre nom ?</label>
+            <input type="text" name="nom" id="nom" autofocus required>
+          </p>
+         <p>
+            <label for="prenom">Quel est votre prenom?</label>
+            <input type="text" name="prenom" id="prenom">
+         </p>
+         <p>
+            <label for="email">Quel est votre email?</label>
+            <input type="text" name="e-mail" id="email">
+          </p>
+             <input type="submit" value="Envoyer">
+        </fieldset>
+        <p>
+            <label for="pseudo">votre pseudo</label>
+           <input type="text" name="pseudo" id="pseudo" maxlength="5" placeholder="fekir" />
+          <input type="password"/>
+          <label for="email">votre mail</label>
+            <input type="email"/>
+            <input type="url" maxlength="9"/>
+            <label for="tel">votre numero</label>
+            <input type="tel">
+            <label for="date">metre la date</label>
+            <input type="date">
+            <label for="sexe">vote sexe</label>
+            <input type="checkbox" name="sexe" id="F"><label for="votre sexe">F</label>
+            <input type="checkbox" name="sexe" id="G"><label for="votre sexe">G</label>
+        
+        <p>veuillez indiquer la tranche d'age dans laquelle vous vous situez</p>
+            <input type="radio" name="age" value="medium15-25" id="medium15-25"/> <label for="medium15-25">15-25 ans</label><br>
+             <input type="radio" name="age" value="medium25-40" id="medium25-40"><label for="medium25-40">25-40 ans</label><br>
+            <input type="radio" name="age" value="plus40" id="plus40"><label for="plus40">Encore plus vieux que ca</label>    
+        </p>
+           <p>sur quelle continen habitez-vous <br>
+           <input type="radio" name="continent" value="europe" id="europe"/> <label for="europe">Europe</label> <br>
+            <input type="radio" name="continent" value="amerique" id="amerique"><label for="amerique">Amerique</label> <br>
+            <input type="radio" name="continent" value="asie" id="asie"><label for="asie">Asie</label><br>
+             <input type="radio" name="continent" value="afrique" id="afrique"><label for="afrique">Afrique</label><br>
+            <input type="radio" name="continen" value="australie" id="australie"><label for="aautralie">australie</label>
+            </p>
+           <p>
+            <label for="pays">Dans quel pays habites-vous</label><br>
+            <select name="pays" id="pays">
+                <option value="france">France</option>
+                <option value="canada">Canada</option>
+                <option value="itali">Itali</option>
+                <option value="allemagme">Allemagne</option>
+                <option value="cameroun">Cameroun</option>
+                <option value="gabbon">Gabon</option>
+                <option value="senegal">Senegal</option>
+                <option value="etats-unis">Etats-unis</option>
+            </select>
+           </p>
+        </form>
+   <p> visitez mes autres pages <a href="page1.html">page1</a> <br>
+      et la page2 aussi n'es pas a neglige <a href="page2.html">page2</a> <br>
+   </p><img id="image_gorille" src="image/gorille.jpg" alt="image gorille">
+   <table border="1">
+    <tr> 
+        <caption>titre du tableau</caption>
+        <th>Noms</th>
+        <th>Matiers</th>
+        <th>Nombre des etudiants</th>
+        <th>Classe minimun</th>
+    </tr>
+    <tr> 
+        <td>Dr ateba</td>
+        <td>Analyse</td>
+        <td>03h</td>
+        <td>1ere A4</td>
+    </tr>
+    <tr>
+    <td> M.mika</td>
+    <td>informatique</td>
+    <td>04h</td>
+    <td>Tle C</td>
+    </tr>
+   </table>
+
+    <audio src="hype_home.mp3" controls></audio><br>
+    <video src="video.mp4" controls width="200px" height="150px" poster="image/image_kadi.jp"></video>
+</body>
+</html>

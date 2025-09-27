@@ -1,0 +1,17 @@
+body
+{
+    background-color:  rgb(138, 219, 250);
+}
+
+#image_gorille
+{
+     width: 300px;
+     height: auto;
+     border: none;
+ cursor: pointer;
+}
+
+table
+{
+    border-collapse: collapse ;
+} 

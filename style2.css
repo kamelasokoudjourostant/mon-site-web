@@ -1,0 +1,238 @@
+body {
+     background-color:black;
+    font-family:  'Trebuchet MS', Arial, sans-serif;
+    color: white;  
+}
+
+ .image {
+    height: 50px;
+    width: 100px;
+
+}
+
+#image {
+   height: 150px;
+   width:1080px;
+
+}
+
+#bloc_page{
+    /* width: 900px; */
+    /* margin: auto; */
+    margin: 10px;
+    padding: 10px;
+}
+
+ section h1, footer h1, nav a
+ {
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+ }
+
+ header 
+ {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+ }
+
+ #logo
+ {
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+ }
+ #logo img 
+ {
+    width: 40px;
+    height: 40px;
+ }
+   /*
+ header h1
+ {
+    font-family: 'ballparkweiner', serif;
+    font-size: 2.5px;
+    font-weight: normal;
+    font-weight: 0 0 0 10px;
+ }
+ header h2
+ {
+   font-family: Dayrom, serif;
+   font-size: 1.1em;
+   margin-top: 0ex;
+   font-weight: normal;
+ }
+ /* navigation*/
+
+ nav ul
+ {
+/* list-style-type: nome; */
+    display: flex;
+ }
+
+ /* nav li{
+  margin-right: 15px;
+ } */
+
+ nav a 
+ {
+    font-size: 1.3em;
+    /* color: #181818; */
+    padding-bottom: 3px;
+    text-decoration: nome;
+    margin-right: 15px;
+ }
+
+ nav a:hover 
+ {
+    color: white;
+    border-bottom: 3px ;
+ }
+ /*banniere*/
+
+ #banniere_image
+ {
+    margin-top: 15px;
+    height: 200px;
+    border-radius:5px;
+    background-color: rgba(226, 241, 249, 0.8);
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+ }
+
+ #banniere_description
+ {
+   position: absolute;
+   bottom: 0;
+   border-radius: 0px 0px 5px 5px;
+   width: 100%;
+   height: 35px;
+   padding-top: 15px;
+   padding-left: 4px;
+   background-color: rgba(8, 8, 8, 0.8);
+   color: white;
+   font-size: 0.8em;
+ }
+
+ #button
+ {
+
+   background-color: rgb(157, 60, 60);
+   color: white;
+   margin-left: 950px;
+   border-radius: 5px 5px 5px 5px;
+   
+ }
+
+ #image_apropos{
+   height: 50px;
+   width: 100px;
+ }
+ 
+
+ section
+ {
+    display: flex;
+    margin-bottom: 20px;
+ }
+
+ article,aside
+{
+   text-align: justify;
+}
+aside
+{
+   flex: 1.2;
+   position: relative;
+   border: #706b64;
+   box-shadow: 0px 2px 5px #d0c0b8;
+   border-radius:5px;
+   padding: 10px;
+   color: white;
+   font-size: 0.9em;
+   background-color: #181818;
+
+}
+aside img{
+   height: 70px;
+   width:50px;
+}
+.ico_categorie
+{
+   vertical-align: middle;
+   margin-right: 8px;
+}
+
+article
+{
+   margin-right: 20px;
+   flex: 3;
+}
+
+#fleche_bulle
+{
+   position: absolute;
+   top: 100px;
+   left: -12px;
+}
+.image
+{
+   text-align:center ;
+    border: 1px solid #181818;
+}
+/*
+#photo
+{
+border: 1px solid #181818;
+}
+*/
+
+aside{
+   margin-right: 5px;
+
+}
+
+#tweet
+{
+   width: 28%;
+}
+
+#mes_photos
+{
+   width: 35%;
+}
+
+#mes_amis ul
+{
+   padding-left: 2px;
+   flex: 1.2;
+   position: relative;
+}
+
+#mes_amis a
+{
+   text-decoration: none;
+   color: #760001;
+}
+
+#mes_amis
+{
+   width: 31%;
+}
+
+#fleche_bulle
+{
+   position: absolute;
+   top: 100px;
+   left:-12px ;
+}
+
+#listes_amis
+{
+display: flex;
+justify-content: space-between;
+margin: top 0;
+}
+media all and ( max-width:)  
